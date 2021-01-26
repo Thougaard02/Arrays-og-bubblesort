@@ -22,15 +22,15 @@ namespace Arrays_og_bubblesort
                 tal[i] = randNumbers;
             }
 
-            for (int j = 0; j <= tal.Length - 2; j++)
+            for (int i = 0; i <= tal.Length - 2; i++)
             {
-                for (int i = 0; i <= tal.Length - 2; i++)
+                for (int j = 0; j <= tal.Length - 2; j++)
                 {
-                    if (tal[i] > tal[i + 1])
+                    if (tal[j] > tal[j + 1])
                     {
-                        temp = tal[i + 1];
-                        tal[i + 1] = tal[i];
-                        tal[i] = temp;
+                        temp = tal[j + 1];
+                        tal[j + 1] = tal[j];
+                        tal[j] = temp;
                     }
                 }
             }
